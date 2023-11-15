@@ -1,0 +1,271 @@
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: #ECE9E4;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Figtree', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  margin-top: 40px;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+
+.logo{
+  margin-top: 40px;
+}
+
+.form-card {
+
+  color: #fff;
+  border-radius: 10px;
+  padding: 30px 40px;
+  width: 400px;
+  max-width: 100%;
+  margin: 50px auto;
+  line-height: 24px;
+  font-weight: 300;
+  text-align: center;
+  box-shadow:
+  0.7px 0.8px 2.2px rgba(0, 0, 0, 0.02),
+  1.8px 1.9px 5.3px rgba(0, 0, 0, 0.028),
+  3.4px 3.6px 10px rgba(0, 0, 0, 0.035),
+  6px 6.5px 17.9px rgba(0, 0, 0, 0.042),
+  11.3px 12.1px 33.4px rgba(0, 0, 0, 0.05),
+  27px 29px 80px rgba(0, 0, 0, 0.07)
+  ;
+}
+
+.form-card form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-noEdit{
+  background: linear-gradient(45deg, #959595, #747474);
+}
+
+.form-edit{
+  background: linear-gradient(45deg, #00E599, #00AAFF);
+}
+
+.form-card label {
+  font-weight: 500;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+.form-card input[type="text"], input[type="number"] {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+}
+
+.form-card input[type="checkbox"] {
+  width: 1.5em;
+  height: 1.5em;
+  border: 0.15em solid #000;
+  margin: 0 0.5em 0 0;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+}
+
+
+/* Buttons */
+.btn {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.book-section{
+  width: 400px;
+  margin-bottom: 20px;
+  background-color: blue;
+  padding: 10px 20px 20px 20px;
+  border-radius: 10px;
+  box-shadow:
+  0.7px 0.8px 2.2px rgba(0, 0, 0, 0.02),
+  1.8px 1.9px 5.3px rgba(0, 0, 0, 0.028),
+  3.4px 3.6px 10px rgba(0, 0, 0, 0.035),
+  6px 6.5px 17.9px rgba(0, 0, 0, 0.042),
+  11.3px 12.1px 33.4px rgba(0, 0, 0, 0.05),
+  27px 29px 80px rgba(0, 0, 0, 0.07)
+  ;
+}
+
+.book-section h1{
+  color: #fff;
+}
+
+.readed{
+  background: linear-gradient(45deg, #FF3355, #FF3377);
+}
+
+.unread{
+  background: linear-gradient(45deg, #A54CFE, #A54CFE);
+}
+
+.check-button {
+  background: url('../assets/check-outline.svg');
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  border: none;
+}
+
+.check-button:hover {
+  background: url('../assets/check-solid.svg');
+  background-size: contain;
+}
+
+.trash-button {
+  background: url('../assets/trash-outline.svg');
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  margin-top: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+.trash-button:hover {
+  background: url('../assets/trash-fill.svg');
+  background-size: contain;
+  width: 25px;
+  height: 25px
+}
+
+.undo-button {
+  background: url('../assets/undo-ouline.svg');
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  margin-top: auto;
+  cursor: pointer;
+  border: none;
+}
+
+.undo-button:hover {
+  background: url('../assets/undo-solid.svg');
+  background-size: contain;
+}
+
+.edit-button {
+  background: url('../assets/edit-outline.svg');
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  margin-top: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+.edit-button:hover {
+  background: url('../assets/edit-fill.svg');
+  background-size: contain;
+}
+
+.check-button:focus, .trash-button {
+  outline: none;
+}
+
+.search{
+  width: 400px;
+}
+
+.form-input-search{
+  margin-top: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background: transparent;
+  outline: none;
+}
+
+.books{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.book-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 400px;
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+}
+
+.book-card h4, h5 {
+  color: #71717a;
+  font-weight: normal;
+}
+
+.card-text {
+  width: 80%
+}
+
+.card-button{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.books{
+  padding: 0;
+}
+
+.books li {
+  list-style: none;
+}
