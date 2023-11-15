@@ -35,7 +35,7 @@ function addBookToObject(){
   const id = generateId();
   const title = bookTitle.value;
   const author = bookAuthor.value;
-  const year = bookYear.value;
+  const year = parseInt(bookYear.value);
   const isComplete = bookIsComplete.checked;
 
   const book = generateBookToObject(id, title, author, year, isComplete);
@@ -138,7 +138,7 @@ function removeBook(bookId) {
 function editBook(bookId) {
   formCard.classList.remove('form-noEdit')
   formCard.classList.add('form-edit')
-  bookSubmitButton.innerHTML = 'Edit Book'
+  bookSubmitButton.innerHTML = 'Update Book'
 
   const bookTarget = findBook(bookId)
   if (bookTarget === null) return
@@ -266,5 +266,4 @@ document.addEventListener(RENDER_EVENT, () =>{
 
 })
 
-console.log(books);
 checkUI();

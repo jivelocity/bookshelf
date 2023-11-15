@@ -142,7 +142,7 @@ input, button, textarea, select {
 }
 
 .check-button {
-  background: url('../assets/check-outline.svg');
+  background: url('./assets/check-outline.svg');
   background-size: contain;
   width: 25px;
   height: 25px;
@@ -151,12 +151,12 @@ input, button, textarea, select {
 }
 
 .check-button:hover {
-  background: url('../assets/check-solid.svg');
+  background: url('./assets/check-solid.svg');
   background-size: contain;
 }
 
 .trash-button {
-  background: url('../assets/trash-outline.svg');
+  background: url('./assets/trash-outline.svg');
   background-size: contain;
   width: 25px;
   height: 25px;
@@ -166,14 +166,14 @@ input, button, textarea, select {
 }
 
 .trash-button:hover {
-  background: url('../assets/trash-fill.svg');
+  background: url('./assets/trash-fill.svg');
   background-size: contain;
   width: 25px;
   height: 25px
 }
 
 .undo-button {
-  background: url('../assets/undo-ouline.svg');
+  background: url('./assets/undo-ouline.svg');
   background-size: contain;
   width: 25px;
   height: 25px;
@@ -183,12 +183,12 @@ input, button, textarea, select {
 }
 
 .undo-button:hover {
-  background: url('../assets/undo-solid.svg');
+  background: url('./assets/undo-solid.svg');
   background-size: contain;
 }
 
 .edit-button {
-  background: url('../assets/edit-outline.svg');
+  background: url('./assets/edit-outline.svg');
   background-size: contain;
   width: 25px;
   height: 25px;
@@ -198,7 +198,7 @@ input, button, textarea, select {
 }
 
 .edit-button:hover {
-  background: url('../assets/edit-fill.svg');
+  background: url('./assets/edit-fill.svg');
   background-size: contain;
 }
 
